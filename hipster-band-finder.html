@@ -115,7 +115,7 @@ network transfer, but it all looks like synchronous file reading to Python.
 import pandas as pd
 import pyodide
 
-df = pd.read_csv(pyodide.open_url("music-reviews.csv"))
+df = pd.read_csv(pyodide.open_url("./music-reviews.csv"))
 df.describe(include='all')
 
 %% md
